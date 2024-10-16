@@ -1,0 +1,8 @@
+<ul>
+  @for(todoItem of todoStore.todos; track todoItem.id){
+  <li style="display:flex;justify-content:space-between;margin:5px">
+    {{ todoItem.title }}
+    <button style="max-height:20px" (click)="removeTodo(todoItem.id)">X</button>
+  </li>
+  }
+</ul>
